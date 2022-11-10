@@ -73,9 +73,7 @@ jobs:
       matrix:
         include:
         - os: ubuntu-latest
-          arch: linux-x86_64
-        - os: macos-10.15
-          arch: osx-x86_64
+          arch: linux-arm64
     runs-on: ${{matrix.os}}
     steps:
     - uses: actions/checkout@v2
